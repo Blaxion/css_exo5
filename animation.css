@@ -1,0 +1,58 @@
+div {
+  animation-name: animSqr;
+  animation-duration: 5s ;
+  /* animation-fill-mode: forwards; */
+  /* animation-direction: reverse;
+  animation-iteration-count: 2;
+  animation-direction: alternate; */
+}
+@keyframes mymove {
+    0% {
+      left: 0px;
+    } 
+    100% {
+      left: 200px;
+    } 
+}
+div:hover{
+  animation-play-state: paused;
+}
+
+@keyframes animSqr{
+  0% {
+    left: 0px;
+    top: 0px;
+  } 
+  25% {
+    left:0px;
+    top: 100px;
+  } 
+  50% {
+    left:100px;
+    top: 100px;
+  } 
+  75% { 
+    left: 100px;
+    top: 0px;
+  } 
+  100% {
+    left: 0px;
+    top: 0px;
+  } 
+}
+
+#bounce-title{   
+  position: absolute;   
+  animation: bouncey 1s infinite alternate; 
+} 
+
+@keyframes bouncey {   
+  0% {     
+    bottom: 100px;     
+    transform: scaleY(1);
+  }  
+  100% {     
+    bottom: -10%;     
+    transform: scaleY(0.3);   } 
+}
+
